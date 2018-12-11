@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine.SceneManagement;
 
-namespace ZeShmouttsAssets.Effects.EditorScripts
+namespace ZeShmouttsAssets.DataContainers.EditorScripts
 {
 	[CustomEditor(typeof(SceneData))]
 	[CanEditMultipleObjects]
