@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ZeShmouttsAssets.Effects
+namespace ZeShmouttsAssets.DataContainers
 {
 	[CreateAssetMenu(fileName = "New Scene Data", menuName = "ZeShmoutt's Assets/Data Containers/Scene")]
 	public class SceneData : ScriptableObject
