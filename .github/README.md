@@ -3,7 +3,7 @@ A way of storing scenes in a ScriptableObject.
 
 ## Uses and restrictions
 
-As per the MIT license [over here](https://github.com/ZeShmoutt/Unity-ScriptableVariables/blob/master/.github/LICENSE), this is pretty much unrestricted in use and modification.
+As per the MIT license [over here](https://github.com/ZeShmoutt/Unity-Scene-ScriptableObject/blob/master/.github/LICENSE), this is pretty much unrestricted in use and modification.
 
 I'd appreciate a lot if you could mention me somewhere if you use it, though.
 
