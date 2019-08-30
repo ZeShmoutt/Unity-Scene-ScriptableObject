@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 namespace ZeShmouttsAssets.DataContainers
 {
-	[CreateAssetMenu(fileName = "New Scene Data", menuName = "ZeShmoutt's Assets/Data Containers/Scene")]
+	[CreateAssetMenu(fileName = "New Scene Data", menuName = "ZeShmoutt's Assets/Data Containers/Scene Data")]
 	public class SceneData : ScriptableObject, ISerializationCallbackReceiver
 	{
 		#region Variables

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
@@ -8,6 +9,57 @@ namespace ZeShmouttsAssets.DataContainers.EditorScripts
 	[CanEditMultipleObjects]
 	public class SceneData_Editor : Editor
 	{
+		#region Context Menu
+
+		private const string MenuItemPath = "Assets/Create/ZeShmoutt's Assets/Data Containers/Scene Data from SceneAsset";
+
+		[MenuItem(MenuItemPath, false, 10)]
+		private static void CreateFromSceneObject()
+		{
+			Object file = Selection.activeObject;
+			if (file is SceneAsset)
+			{
+				CreateSceneData(file as SceneAsset);
+			}
+			else
+			{
+				Debug.LogError("Selected Object isn't a SceneAsset.");
+			}
+		}
+
+		[MenuItem(MenuItemPath, true, 10)]
+		private static bool IsSceneAsset()
+		{
+			Object file = Selection.activeObject;
+			return (file is SceneAsset);
+		}
+
+		/// <summary>
+		/// Creates a new SceneData based on an existing SceneAsset in the same folder.
+		/// </summary>
+		/// <param name="scene">SceneAsset used as a reference.</param>
+		private static void CreateSceneData(SceneAsset scene)
+		{
+			SceneData assetObject = ScriptableObject.CreateInstance<SceneData>();
+			
+			BindingFlags bindFlags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static;
+			FieldInfo field = typeof(SceneData).GetField("scene", bindFlags);
+			field.SetValue(assetObject, scene);
+
+			string scenePath = AssetDatabase.GetAssetPath(scene);
+			string folderPath = scenePath.Substring(0, scenePath.LastIndexOf('/'));
+			string assetPath = string.Format("{0}/{1}_Data.asset", folderPath, scene.name);
+
+			AssetDatabase.CreateAsset(assetObject, assetPath);
+			AssetDatabase.SaveAssets();
+
+			EditorUtility.FocusProjectWindow();
+
+			Selection.activeObject = assetObject;
+		}
+
+		#endregion
+
 		#region Variables
 
 		private SceneData script;
