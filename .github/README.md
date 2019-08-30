@@ -7,6 +7,14 @@ As per the MIT license [over here](https://github.com/ZeShmoutt/Unity-Scene-Scri
 
 I'd appreciate a lot if you could mention me somewhere if you use it, though.
 
+## Why would I need to store a scene in a ScriptableObject ?
+
+In Unity, you can load a scene by either its name, its path or its build index - so the common way of picking the scene is by adding a `public int` or a `public string` to your script and load from that.
+
+Six months later, you have dozens of scenes and dozens of different scripts loading scenes. If you need to change a single scene (remove it from the build settings, rename it, whatever), you *will* forget to do the corresponding change somewhere, resulting in incorrect scenes being loaded or trying to load a scene that doesn't even exist anymore.
+
+By using my SceneData, you can directly reference the SceneData anywhere you need it, and let it do the work of figuring where the scene is in your built game while you can focus on how terrible Unity's default way of loading scenes is.
+
 ## How to create a Scene ScriptableObject
 
 As usual with ScriptableObjects :
