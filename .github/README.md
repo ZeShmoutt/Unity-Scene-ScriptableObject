@@ -23,7 +23,7 @@ As usual with ScriptableObjects :
 
 * Using Unity's menu bar : `Assets/Create/ZeShmoutt's Assets/Data Containers/Scene Data`
 * In the Project window : `Create/ZeShmoutt's Assets/Data Containers/Scene Data`
-* **Bonus** - By right-clicking a SceneAsset in the Project tab : `Create/ZeShmoutt's Assets/Data Containers/Scene Data from SceneAsset` (and it will automatically assing the selected scene)
+* As a context menu on a SceneAsset : `Create/ZeShmoutt's Assets/Data Containers/Scene Data from SceneAsset`
 
 ## How to use in your scripts
 
