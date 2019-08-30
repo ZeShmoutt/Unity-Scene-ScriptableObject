@@ -13,7 +13,9 @@ In Unity, you can load a scene by either its name, its path or its build index -
 
 Six months later, you have dozens of scenes and dozens of different scripts loading scenes. If you need to change a single scene (remove it from the build settings, rename it, whatever), you *will* forget to do the corresponding change somewhere, resulting in incorrect scenes being loaded or trying to load a scene that doesn't even exist anymore.
 
-By using my SceneData, you can directly reference the SceneData anywhere you need it, and let it do the work of figuring where the scene is in your built game while you can focus on how terrible Unity's default way of loading scenes is.
+By using my SceneData, you can directly reference the SceneData anywhere you need it, and let it do the work of figuring where the scene is in your built game. It doesn't care about you changing the name, path or build index : as long as you tell it which scene it must point to, it *will* find it.
+
+With all that free time you suddenly get from no longer having to debug every single scene, you can now focus on important stuff like how terrible Unity's default way of loading scenes is.
 
 ## How to create a Scene ScriptableObject
 
