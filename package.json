@@ -1,0 +1,10 @@
+{
+	"name": "com.zeshmouttsassets.unityscenesasscriptableobjects",
+	"displayName":"Unity Scenes as ScriptableObjects",
+	"version": "1.0.0",
+	"unity": "2018.4",
+	"unityRelease": "15f1",
+	"description": "Assign your Scenes into ScriptableObjects for easier handling.",
+	"keywords": ["unity", "scripting", "tool", "tools", "C#"],
+	"dependencies": { }
+}

@@ -1,11 +1,24 @@
 # Unity Scenes as ScriptableObjects
+
 A way of storing scenes in a ScriptableObject.
 
 ## Uses and restrictions
 
-As per the MIT license [over here](https://github.com/ZeShmoutt/Unity-Scene-ScriptableObject/blob/master/.github/LICENSE), this is pretty much unrestricted in use and modification.
+As per the MIT license, this is pretty much unrestricted in use and modification.
 
 I'd appreciate a lot if you could mention me somewhere if you use it, though.
+
+## Links
+
+ - [License](LICENSE)
+ - [Changelog](CHANGELOG.md)
+
+## Installation
+
+ - Unity 2019 or newer : Open the Package manager, select  and import the package with the git URL.
+ - Unity 2018 or older : Clone/download the repo and put it in your Unity project's assets.
+
+-----
 
 ## Why would I need to store a scene in a ScriptableObject ?
 

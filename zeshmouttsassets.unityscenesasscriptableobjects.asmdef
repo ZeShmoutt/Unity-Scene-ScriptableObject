@@ -1,0 +1,15 @@
+{
+    "name": "Unity Scenes as ScriptableObjects",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_2018_4_OR_NEWER"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
