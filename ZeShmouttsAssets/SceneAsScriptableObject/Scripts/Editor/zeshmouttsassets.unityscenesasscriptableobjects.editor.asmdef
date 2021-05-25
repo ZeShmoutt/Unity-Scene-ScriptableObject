@@ -1,0 +1,19 @@
+{
+    "name": "Unity Scenes as ScriptableObjects (Editor)",
+    "references": [
+        "GUID:ce447086f33e03349a94957d9b19d39b"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_2018_4_OR_NEWER"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
